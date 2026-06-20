@@ -38,7 +38,7 @@ body::before {
     pointer-events: none;
     z-index: 0;
 }
-.container { max-width: 1200px; margin: 0 auto; padding: 1.5rem 1rem; position: relative; z-index: 1; }
+.container { max-width: 1200px; width: 100%; margin: 0 auto; padding: 1.5rem 1rem; position: relative; z-index: 1; box-sizing: border-box; }
 .header {
     background: rgba(15,23,42,0.7);
     backdrop-filter: blur(20px);
@@ -151,6 +151,7 @@ tr td { transition: all 0.2s; }
     background: var(--glass-bg); border: 1px solid var(--glass-border);
     backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
     border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;
+    max-width: 100%; box-sizing: border-box;
 }
 .info-item {
     background: var(--glass-bg); border: 1px solid var(--glass-border);
